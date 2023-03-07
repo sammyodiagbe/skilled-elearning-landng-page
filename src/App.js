@@ -42,7 +42,6 @@ function App() {
         </section>
         <section className="item">
           <IconDesign />
-
           <h3>Design</h3>
           <p>
             Create beautiful, usable interfacesto help shape the future of how
