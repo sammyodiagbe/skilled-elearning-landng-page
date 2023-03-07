@@ -18,8 +18,6 @@
             &.offer-image {
               display: none;
             }
-            &.tablet-image {
-            }
           }
         }
       }
@@ -27,12 +25,16 @@
       main.main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        row-gap: 45px;
 
-        div.item {
+        section.item {
+          svg {
+            position: relative;
+            top: -40px;
+          }
           &.item-1 {
             padding-top: 3em;
           }
-          row-gap: 35px;
         }
       }
     }

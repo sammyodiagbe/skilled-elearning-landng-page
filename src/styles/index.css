@@ -192,11 +192,13 @@ body footer.footer div.container a:hover {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    row-gap: 45px;
   }
-  body div.container main.main div.item {
-    row-gap: 35px;
+  body div.container main.main section.item svg {
+    position: relative;
+    top: -40px;
   }
-  body div.container main.main div.item.item-1 {
+  body div.container main.main section.item.item-1 {
     padding-top: 3em;
   }
 }
