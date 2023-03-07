@@ -15,6 +15,10 @@ body {
   color: #838698;
 }
 
+body img {
+  max-width: 100%;
+}
+
 body a {
   text-decoration: none;
   display: inline-block;
@@ -62,7 +66,7 @@ body div.container nav.navigation a {
 }
 
 body div.container nav.navigation a:hover {
-  background-color: #666ca3;
+  opacity: 0.8;
 }
 
 body div.container header.jumbotron aside.write-up h1,
@@ -77,7 +81,7 @@ body div.container header.jumbotron aside.write-up a {
 }
 
 body div.container header.jumbotron aside.write-up a:hover {
-  background: #666ca3;
+  opacity: 0.8;
 }
 
 body div.container header.jumbotron aside.write-up h1 {
@@ -132,20 +136,6 @@ body footer.footer {
   background: #13183f;
 }
 
-body footer.footer b.logo {
-  font-size: 28px;
-}
-
-body footer.footer a {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4851ff), to(#f02aa6));
-  background: linear-gradient(to bottom, #4851ff, #f02aa6);
-}
-
-body footer.footer a:hover {
-  background: -webkit-gradient(linear, left top, left bottom, from(#4857ff), to(#f02aa6));
-  background: linear-gradient(to bottom, #4857ff, #f02aa6);
-}
-
 body footer.footer div.container {
   padding: 2.5em 1.2em;
   display: -webkit-box;
@@ -157,5 +147,19 @@ body footer.footer div.container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body footer.footer div.container b.logo {
+  font-size: 28px;
+}
+
+body footer.footer div.container a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4851ff), to(#f02aa6));
+  background: linear-gradient(to bottom, #4851ff, #f02aa6);
+  color: #fff;
+}
+
+body footer.footer div.container a:hover {
+  background: #ffa7c3;
 }
 /*# sourceMappingURL=index.css.map */

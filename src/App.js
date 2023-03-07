@@ -3,6 +3,7 @@ import IconBusiness from "./components/icon-business";
 import IconDesign from "./components/icon-design";
 import IconCrypto from "./components/icon-crypto";
 import IconPhotographpy from "./components/icon-photography";
+import Image from "./assets/image-hero-mobile.png";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             <a href="#get-started" className="get-started m">
               Get Started
             </a>
+          </aside>
+          <aside className="img-container">
+            <img src={Image} alt="What we offer" className="offer-image" />
           </aside>
         </header>
         <main className="main">
