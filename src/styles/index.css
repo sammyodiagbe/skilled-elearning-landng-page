@@ -85,11 +85,7 @@ body div.container header.jumbotron aside.write-up h1 {
 }
 
 body div.container header.jumbotron aside.img-container {
-  text-align: center;
-}
-
-body div.container header.jumbotron aside.img-container img {
-  width: 450px;
+  background: url(../assets/image-hero-mobile@2x.png) no-repeat;
 }
 
 body div.container main.main {
@@ -168,6 +164,9 @@ body footer.footer div.container a:hover {
 }
 
 @media screen and (min-width: 760px) {
+  body div.container nav.navigation b.logo {
+    font-size: 36px;
+  }
   body div.container header.jumbotron {
     display: -ms-grid;
     display: grid;
@@ -181,11 +180,12 @@ body footer.footer div.container a:hover {
   body div.container header.jumbotron aside.write-up h1 {
     font-size: 40px;
   }
-  body div.container header.jumbotron s aside.img-container {
-    position: relative;
+  body div.container header.jumbotron aside.write-up p {
+    font-size: 18px;
   }
-  body div.container header.jumbotron s aside.img-container img.offer-image {
-    display: none;
+  body div.container header.jumbotron aside.img-container {
+    background: url("../assets/image-hero-tablet@2x.png") no-repeat;
+    background-position: center;
   }
   body div.container main.main {
     display: -ms-grid;
@@ -200,6 +200,28 @@ body footer.footer div.container a:hover {
   }
   body div.container main.main section.item.item-1 {
     padding-top: 3em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body div.container {
+    width: 1110px;
+    margin: 0 auto;
+  }
+  body div.container nav.navigation b.logo {
+    font-size: 36px;
+  }
+  body div.container header.jumbotron aside.write-up h1 {
+    font-size: 56px;
+    line-height: 70px;
+  }
+  body div.container header.jumbotron aside.img-container {
+    background: url(../assets/image-hero-desktop.png) no-repeat;
+    background-position: 100% 100%;
+  }
+  body div.container main.main {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 /*# sourceMappingURL=index.css.map */
