@@ -90,7 +90,10 @@ body div.container header.jumbotron aside.write-up h1 {
 
 body div.container header.jumbotron aside.img-container {
   text-align: center;
-  width: 350px;
+}
+
+body div.container header.jumbotron aside.img-container img {
+  width: 450px;
 }
 
 body div.container main.main {

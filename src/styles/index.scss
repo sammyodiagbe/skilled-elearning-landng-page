@@ -98,7 +98,9 @@ body {
 
       aside.img-container {
         text-align: center;
-        width: 350px;
+        img {
+          width: 450px;
+        }
       }
     }
     main.main {
