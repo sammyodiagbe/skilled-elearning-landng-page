@@ -1,3 +1,9 @@
+import IconAnimation from "./components/icon-animation";
+import IconBusiness from "./components/icon-business";
+import IconDesign from "./components/icon-design";
+import IconCrypto from "./components/icon-crypto";
+import IconPhotographpy from "./components/icon-photography";
+
 function App() {
   return (
     <div className="container">
@@ -10,6 +16,7 @@ function App() {
       </nav>
       <header className="jumbotron">
         <aside className="write-up">
+          <span></span>
           <h1>Maximize Skill, minimize budget</h1>
           <p>
             Our modern courses across a range of in-demand skill willgive you
@@ -23,6 +30,10 @@ function App() {
       <main className="main">
         <section className="item item-1"></section>
         <section className="item">
+          <span>
+            <IconAnimation />
+          </span>
+
           <h3>Animation</h3>
           <p>
             Learn the latest animation techniques to create stunning motion
@@ -33,6 +44,10 @@ function App() {
           </a>
         </section>
         <section className="item">
+          <span>
+            <IconDesign />
+          </span>
+
           <h3>Design</h3>
           <p>
             Create beautiful, usable interfacesto help shape the future of how
@@ -43,6 +58,10 @@ function App() {
           </a>
         </section>
         <section className="item">
+          <span>
+            <IconPhotographpy />
+          </span>
+
           <h3>Photography</h3>
           <p>
             Explore critical fundamentals like lighting, composition, and focus
@@ -53,6 +72,10 @@ function App() {
           </a>
         </section>
         <section className="item">
+          <span>
+            <IconCrypto />
+          </span>
+
           <h3>Crypto</h3>
           <p>
             All you need to get starte investing in crypto. Go from beginner to
@@ -63,6 +86,10 @@ function App() {
           </a>
         </section>
         <section className="item">
+          <span>
+            <IconBusiness />
+          </span>
+
           <h3>Business</h3>
           <p>
             A step-by-step playbook to help you start, scale, and sustain your
