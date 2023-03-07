@@ -84,8 +84,9 @@ body div.container header.jumbotron aside.write-up h1 {
   color: #13183f;
 }
 
-body div.container header.jumbotron aside.img-container {
-  background: url(../assets/image-hero-mobile@2x.png) no-repeat;
+body div.container header.jumbotron aside.img-container img.desktop-image,
+body div.container header.jumbotron aside.img-container img.tablet-image {
+  display: none;
 }
 
 body div.container main.main {
@@ -184,8 +185,14 @@ body footer.footer div.container a:hover {
     font-size: 18px;
   }
   body div.container header.jumbotron aside.img-container {
-    background: url("../assets/image-hero-tablet@2x.png") no-repeat;
-    background-position: center;
+    position: relative;
+  }
+  body div.container header.jumbotron aside.img-container img.mobile, body div.container header.jumbotron aside.img-container img.desktop-image {
+    display: none;
+  }
+  body div.container header.jumbotron aside.img-container img.tablet-image {
+    display: block;
+    position: absolute;
   }
   body div.container main.main {
     display: -ms-grid;
@@ -211,15 +218,28 @@ body footer.footer div.container a:hover {
   body div.container nav.navigation b.logo {
     font-size: 36px;
   }
+  body div.container header.jumbotron {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
   body div.container header.jumbotron aside.write-up h1 {
     font-size: 56px;
     line-height: 70px;
   }
   body div.container header.jumbotron aside.img-container {
-    background: url(../assets/image-hero-desktop.png) no-repeat;
-    background-position: 100% 100%;
+    position: relative;
+  }
+  body div.container header.jumbotron aside.img-container img.mobile, body div.container header.jumbotron aside.img-container img.tablet-image {
+    display: none;
+  }
+  body div.container header.jumbotron aside.img-container img.desktop-image {
+    display: block;
+    top: -50px;
   }
   body div.container main.main {
+    padding: 15em 0;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }

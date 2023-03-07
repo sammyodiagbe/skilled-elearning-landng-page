@@ -94,7 +94,12 @@ body {
       }
 
       aside.img-container {
-        background: url(../assets/image-hero-mobile@2x.png) no-repeat;
+        // background: url("../assets/image-hero-mobile@2x.png") no-repeat;
+
+        img.desktop-image,
+        img.tablet-image {
+          display: none;
+        }
       }
     }
     main.main {

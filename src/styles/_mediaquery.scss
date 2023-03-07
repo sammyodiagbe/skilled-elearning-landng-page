@@ -22,8 +22,18 @@
           }
         }
         aside.img-container {
-          background: url("../assets/image-hero-tablet@2x.png") no-repeat;
-          background-position: center;
+          position: relative;
+          img {
+            &.mobile,
+            &.desktop-image {
+              display: none;
+            }
+
+            &.tablet-image {
+              display: block;
+              position: absolute;
+            }
+          }
         }
       }
 
@@ -48,9 +58,6 @@
 
 @media screen and (min-width: 1440px) {
   body {
-    // background: url(../assets/image-hero-desktop.png) no-repeat;
-    // background-position: 120% -50%;
-    // background-size: 991px 936px;
     div.container {
       nav.navigation {
         b.logo {
@@ -60,6 +67,8 @@
       width: 1110px;
       margin: 0 auto;
       header.jumbotron {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         aside.write-up {
           h1 {
             font-size: 56px;
@@ -68,13 +77,24 @@
         }
 
         aside.img-container {
-          background: url(../assets/image-hero-desktop.png) no-repeat;
-          background-position: 100% 100%;
           //   background-size: contain;
+          position: relative;
+          img {
+            &.mobile,
+            &.tablet-image {
+              display: none;
+            }
+
+            &.desktop-image {
+              display: block;
+              top: -50px;
+            }
+          }
         }
       }
 
       main.main {
+        padding: 15em 0;
         grid-template-columns: repeat(3, 1fr);
       }
     }
