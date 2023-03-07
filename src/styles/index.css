@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap");
 * {
   padding: 0;
   border: none;
@@ -5,18 +6,156 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
   font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #838698;
 }
 
 body a {
   text-decoration: none;
+  display: inline-block;
+  padding: 0.8em 2em;
+  font-weight: bold;
+  border-radius: 50vw;
+  color: #fff;
 }
 
 body svg {
   width: 50px;
   height: auto;
+}
+
+body div.container {
+  padding: 0 1.5em;
+}
+
+body div.container nav.navigation,
+body div.container footer.footer {
+  padding: 1.2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body div.container nav.navigation b.logo,
+body div.container footer.footer b.logo {
+  font-size: 28px;
+}
+
+body div.container nav.navigation b.logo {
+  color: #13183f;
+}
+
+body div.container nav.navigation a {
+  background: #13183f;
+  border-radius: 50vw;
+}
+
+body div.container nav.navigation a:hover {
+  background-color: #666ca3;
+}
+
+body div.container header.jumbotron aside.write-up h1,
+body div.container header.jumbotron aside.write-up p,
+body div.container header.jumbotron aside.write-up a {
+  margin-bottom: 1.3em;
+}
+
+body div.container header.jumbotron aside.write-up a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f02aa6), to(#ff6f48));
+  background: linear-gradient(to bottom, #f02aa6, #ff6f48);
+}
+
+body div.container header.jumbotron aside.write-up a:hover {
+  background: #666ca3;
+}
+
+body div.container header.jumbotron aside.write-up h1 {
+  color: #13183f;
+}
+
+body div.container main.main {
+  padding: 3.5em 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.3em;
+}
+
+body div.container main.main section.item {
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  padding: 1.5em;
+  background: #fff;
+  border-radius: 15px;
+}
+
+body div.container main.main section.item h3 {
+  font-weight: bolder;
+  color: #13183f;
+}
+
+body div.container main.main section.item h3,
+body div.container main.main section.item p,
+body div.container main.main section.item a,
+body div.container main.main section.item svg {
+  margin-bottom: 1.3em;
+}
+
+body div.container main.main section.item a {
+  color: #f74780;
+  padding: 0;
+}
+
+body div.container main.main section.item.item-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6f48), to(#f02aa6));
+  background: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  color: #fff;
+}
+
+body div.container main.main section.item.item-1 h2 {
+  font-weight: 600;
+}
+
+body footer.footer {
+  background: #13183f;
+}
+
+body footer.footer b.logo {
+  font-size: 28px;
+}
+
+body footer.footer a {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4851ff), to(#f02aa6));
+  background: linear-gradient(to bottom, #4851ff, #f02aa6);
+}
+
+body footer.footer a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#4857ff), to(#f02aa6));
+  background: linear-gradient(to bottom, #4857ff, #f02aa6);
+}
+
+body footer.footer div.container {
+  padding: 2.5em 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */

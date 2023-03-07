@@ -1,20 +1,149 @@
+$padding: 1.5em;
+$element_padding: 1.2em;
+$button-padding: 0.8em 2em;
+$white: #fff;
+
+$call-to-action-1: #f74780;
+$call-to-action-2: linear-gradient(to bottom, #4851ff, #f02aa6);
+$call-to-action-3: linear-gradient(to bottom, #f02aa6, #ff6f48);
+$button-1-hover: #666ca3;
+$body-color: #838698;
+$call-to-action: #13183f;
+$button-border-radius: 50vw;
+$items-border-radius: 15px;
+$items-padding: 1.5em;
+$linear-gradient: linear-gradient(to bottom, #ff6f48, #f02aa6);
+$space-between-elements: 1.3em;
+
+$call-to-action-hover: #ffa7c3;
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;800&display=swap");
+
 * {
   padding: 0;
   border: none;
   outline: none;
   box-sizing: border-box;
   margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
   font-size: 16px;
-
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: $body-color;
   a {
     text-decoration: none;
+    display: inline-block;
+    padding: $button-padding;
+    font-weight: bold;
+    border-radius: $button-border-radius;
+    color: $white;
   }
 
   svg {
     width: 50px;
     height: auto;
+  }
+
+  div.container {
+    padding: 0 $padding;
+
+    nav.navigation,
+    footer.footer {
+      b.logo {
+        font-size: 28px;
+      }
+      padding: $element_padding 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav.navigation {
+      b.logo {
+        color: $call-to-action;
+      }
+      a {
+        background: $call-to-action;
+        border-radius: $button-border-radius;
+        &:hover {
+          background-color: $button-1-hover;
+        }
+      }
+    }
+
+    header.jumbotron {
+      aside.write-up {
+        h1,
+        p,
+        a {
+          margin-bottom: $space-between-elements;
+        }
+
+        a {
+          background: linear-gradient(to bottom, #f02aa6, #ff6f48);
+          &:hover {
+            background: #666ca3;
+          }
+        }
+
+        h1 {
+          color: $call-to-action;
+        }
+      }
+    }
+    main.main {
+      padding: 3.5em 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: $space-between-elements;
+      section.item {
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+        padding: $items-padding;
+        background: $white;
+        border-radius: $items-border-radius;
+        h3 {
+          font-weight: bolder;
+          color: $call-to-action;
+        }
+        h3,
+        p,
+        a,
+        svg {
+          margin-bottom: $space-between-elements;
+        }
+        a {
+          color: $call-to-action-1;
+          padding: 0;
+        }
+        &.item-1 {
+          background: $linear-gradient;
+          color: $white;
+          h2 {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  footer.footer {
+    background: $call-to-action;
+    b.logo {
+      font-size: 28px;
+    }
+
+    a {
+      background: $call-to-action-2;
+
+      &:hover {
+        background: linear-gradient(to bottom, #4857ff, #f02aa6);
+      }
+    }
+    div.container {
+      padding: 2.5em $element_padding;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
