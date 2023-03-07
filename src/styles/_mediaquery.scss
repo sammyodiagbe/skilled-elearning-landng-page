@@ -1,0 +1,40 @@
+@media screen and (min-width: 760px) {
+  body {
+    div.container {
+      header.jumbotron {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1.3em 0;
+        align-items: center;
+
+        aside.write-up {
+          h1 {
+            font-size: 40px;
+          }
+        }
+        s aside.img-container {
+          position: relative;
+          img {
+            &.offer-image {
+              display: none;
+            }
+            &.tablet-image {
+            }
+          }
+        }
+      }
+
+      main.main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        div.item {
+          &.item-1 {
+            padding-top: 3em;
+          }
+          row-gap: 35px;
+        }
+      }
+    }
+  }
+}

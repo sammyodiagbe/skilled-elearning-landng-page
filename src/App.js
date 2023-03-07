@@ -4,7 +4,7 @@ import IconDesign from "./components/icon-design";
 import IconCrypto from "./components/icon-crypto";
 import IconPhotographpy from "./components/icon-photography";
 import Image from "./assets/image-hero-mobile.png";
-
+import tabletImage from "./assets/image-hero-tablet.webp";
 function App() {
   return (
     <>
@@ -28,7 +28,12 @@ function App() {
             </a>
           </aside>
           <aside className="img-container">
-            <img src={Image} alt="What we offer" className="offer-image" />
+            {/* <img src={Image} alt="What we offer" className="offer-image" />
+            <img
+              src={tabletImage}
+              alt="What we offer tablet"
+              className="tablet-image "
+            /> */}
           </aside>
         </header>
         <main className="main">

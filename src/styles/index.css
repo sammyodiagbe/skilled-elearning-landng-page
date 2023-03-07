@@ -15,10 +15,6 @@ body {
   color: #838698;
 }
 
-body img {
-  max-width: 100%;
-}
-
 body a {
   text-decoration: none;
   display: inline-block;
@@ -169,5 +165,39 @@ body footer.footer div.container a {
 
 body footer.footer div.container a:hover {
   background: #ffa7c3;
+}
+
+@media screen and (min-width: 760px) {
+  body div.container header.jumbotron {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    padding: 1.3em 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body div.container header.jumbotron aside.write-up h1 {
+    font-size: 40px;
+  }
+  body div.container header.jumbotron s aside.img-container {
+    position: relative;
+  }
+  body div.container header.jumbotron s aside.img-container img.offer-image {
+    display: none;
+  }
+  body div.container main.main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  body div.container main.main div.item {
+    row-gap: 35px;
+  }
+  body div.container main.main div.item.item-1 {
+    padding-top: 3em;
+  }
 }
 /*# sourceMappingURL=index.css.map */

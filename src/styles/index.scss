@@ -32,9 +32,6 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   color: $body-color;
 
-  img {
-    max-width: 100%;
-  }
   a {
     text-decoration: none;
     display: inline-block;
@@ -159,3 +156,5 @@ body {
     }
   }
 }
+
+@import "./mediaquery";
