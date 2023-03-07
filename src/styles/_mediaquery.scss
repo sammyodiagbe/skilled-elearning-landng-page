@@ -58,6 +58,7 @@
 
 @media screen and (min-width: 1440px) {
   body {
+    overflow-x: hidden;
     div.container {
       nav.navigation {
         b.logo {
@@ -87,7 +88,9 @@
 
             &.desktop-image {
               display: block;
-              top: -50px;
+              position: absolute;
+              top: -520px;
+              right: -530px;
             }
           }
         }

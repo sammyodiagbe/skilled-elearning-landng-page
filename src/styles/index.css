@@ -211,6 +211,9 @@ body footer.footer div.container a:hover {
 }
 
 @media screen and (min-width: 1440px) {
+  body {
+    overflow-x: hidden;
+  }
   body div.container {
     width: 1110px;
     margin: 0 auto;
@@ -236,7 +239,9 @@ body footer.footer div.container a:hover {
   }
   body div.container header.jumbotron aside.img-container img.desktop-image {
     display: block;
-    top: -50px;
+    position: absolute;
+    top: -520px;
+    right: -530px;
   }
   body div.container main.main {
     padding: 15em 0;
