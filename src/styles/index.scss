@@ -95,6 +95,11 @@ body {
           color: $call-to-action;
         }
       }
+
+      aside.img-container {
+        text-align: center;
+        width: 350px;
+      }
     }
     main.main {
       padding: 3.5em 0;

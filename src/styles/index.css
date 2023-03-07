@@ -88,6 +88,11 @@ body div.container header.jumbotron aside.write-up h1 {
   color: #13183f;
 }
 
+body div.container header.jumbotron aside.img-container {
+  text-align: center;
+  width: 350px;
+}
+
 body div.container main.main {
   padding: 3.5em 0;
   display: -ms-grid;
