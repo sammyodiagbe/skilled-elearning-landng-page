@@ -84,6 +84,11 @@ body div.container header.jumbotron aside.write-up h1 {
   color: #13183f;
 }
 
+body div.container header.jumbotron aside.img-container {
+  position: relative;
+  text-align: center;
+}
+
 body div.container header.jumbotron aside.img-container img.desktop-image,
 body div.container header.jumbotron aside.img-container img.tablet-image {
   display: none;
@@ -178,6 +183,9 @@ body footer.footer div.container a:hover {
         -ms-flex-align: center;
             align-items: center;
   }
+  body div.container header.jumbotron aside.write-up {
+    padding-top: 5em;
+  }
   body div.container header.jumbotron aside.write-up h1 {
     font-size: 40px;
   }
@@ -193,6 +201,8 @@ body footer.footer div.container a:hover {
   body div.container header.jumbotron aside.img-container img.tablet-image {
     display: block;
     position: absolute;
+    top: -300px;
+    right: -250px;
   }
   body div.container main.main {
     display: -ms-grid;
@@ -200,6 +210,7 @@ body footer.footer div.container a:hover {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     row-gap: 45px;
+    padding: 12em 0;
   }
   body div.container main.main section.item svg {
     position: relative;
@@ -226,6 +237,9 @@ body footer.footer div.container a:hover {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  body div.container header.jumbotron aside.write-up {
+    padding-top: 3em;
   }
   body div.container header.jumbotron aside.write-up h1 {
     font-size: 56px;

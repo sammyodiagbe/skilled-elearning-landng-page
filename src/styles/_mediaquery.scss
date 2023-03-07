@@ -13,6 +13,7 @@
         align-items: center;
 
         aside.write-up {
+          padding-top: 5em;
           h1 {
             font-size: 40px;
           }
@@ -32,6 +33,8 @@
             &.tablet-image {
               display: block;
               position: absolute;
+              top: -300px;
+              right: -250px;
             }
           }
         }
@@ -41,7 +44,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 45px;
-
+        padding: 12em 0;
         section.item {
           svg {
             position: relative;
@@ -71,6 +74,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         aside.write-up {
+          padding-top: 3em;
           h1 {
             font-size: 56px;
             line-height: 70px;
@@ -80,6 +84,7 @@
         aside.img-container {
           //   background-size: contain;
           position: relative;
+
           img {
             &.mobile,
             &.tablet-image {

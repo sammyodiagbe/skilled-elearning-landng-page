@@ -95,7 +95,8 @@ body {
 
       aside.img-container {
         // background: url("../assets/image-hero-mobile@2x.png") no-repeat;
-
+        position: relative;
+        text-align: center;
         img.desktop-image,
         img.tablet-image {
           display: none;
