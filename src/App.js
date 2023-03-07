@@ -16,7 +16,6 @@ function App() {
       </nav>
       <header className="jumbotron">
         <aside className="write-up">
-          <span></span>
           <h1>Maximize Skill, minimize budget</h1>
           <p>
             Our modern courses across a range of in-demand skill willgive you
@@ -30,9 +29,7 @@ function App() {
       <main className="main">
         <section className="item item-1"></section>
         <section className="item">
-          <span>
-            <IconAnimation />
-          </span>
+          <IconAnimation />
 
           <h3>Animation</h3>
           <p>
@@ -44,9 +41,7 @@ function App() {
           </a>
         </section>
         <section className="item">
-          <span>
-            <IconDesign />
-          </span>
+          <IconDesign />
 
           <h3>Design</h3>
           <p>
@@ -58,9 +53,7 @@ function App() {
           </a>
         </section>
         <section className="item">
-          <span>
-            <IconPhotographpy />
-          </span>
+          <IconPhotographpy />
 
           <h3>Photography</h3>
           <p>
@@ -72,9 +65,7 @@ function App() {
           </a>
         </section>
         <section className="item">
-          <span>
-            <IconCrypto />
-          </span>
+          <IconCrypto />
 
           <h3>Crypto</h3>
           <p>
@@ -86,9 +77,7 @@ function App() {
           </a>
         </section>
         <section className="item">
-          <span>
-            <IconBusiness />
-          </span>
+          <IconBusiness />
 
           <h3>Business</h3>
           <p>
