@@ -14,4 +14,9 @@ body {
 body a {
   text-decoration: none;
 }
+
+body svg {
+  max-height: 40px;
+  max-width: 40px;
+}
 /*# sourceMappingURL=index.css.map */
